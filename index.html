@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/6c88a3dc0d.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Scoreboard</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="home_score">
+        <div>
+          <h1 class="title">HOME</h1>
+          <h1 id="home_num" class="score">0</h1>
+        </div>
+        <i id="fa-caret-left" class="fa-solid fa-caret-left fa-xl"></i>
+        <div id="home_options" class="options">
+          <button id="first_summand">+1</button>
+          <button id="second_summand">+2</button>
+          <button id="third_summand">+3</button>
+        </div>
+      </div>
+      <div class="game_features">
+        <h2 id="timer">48:00</h2>
+        <div class="period" id="period">
+          <h2>0</h2>
+          <h3>Period</h3>
+        </div>
+        <div class="btn_container">
+          <button id="start_btn">Start</button>
+          <button id="reset_btn">Reset</button>
+        </div>
+      </div>
+      <div class="guest_score">
+        <div>
+          <h1 class="title">GUEST</h1>
+          <h1 id="guest_num" class="score">0</h1>
+        </div>
+        <i id="fa-caret-right" class="fa-solid fa-caret-right fa-xl"></i>
+        <div id="guest_options" class="options">
+          <button id="first_guest_sum">+1</button>
+          <button id="second_guest_sum">+2</button>
+          <button id="third_guest_sum">+3</button>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

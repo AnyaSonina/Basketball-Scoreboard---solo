@@ -1,0 +1,151 @@
+@font-face {
+  font-family:"Cursed Timer ULiL";
+  font-style:normal;
+  font-weight:normal;
+  src: url("/CursedTimerULiL.ttf");
+}
+
+body {  
+  color: #fff;
+  font-family: Cursed Timer ULiL;
+}
+
+.period {
+  text-align: center;
+}
+
+.period h2 {
+  background-color: #000;
+  color: rgb(4, 239, 4);
+  display: inline-block;
+  padding: 0.5em;
+} 
+
+.period h3 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-top: 0;
+}
+
+.title {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+
+/*Layout*/
+.container {
+  background-color: #1B244A;
+  border-radius: 1em;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 1em;
+  margin: 0 auto;
+  max-width: 700px;
+  overflow: hidden;
+  padding: 1em;
+}
+
+.score {
+  background-color: #000;
+  color: #F94F6D;
+  font-size: 4rem;
+  margin:0;
+  padding: 0.5em;
+  text-align: center;  
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+.options {
+  display: flex;
+  gap: 5px;
+  justify-content: space-around;
+  margin: 1.3em 0;
+}
+
+.game_features {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.guest_score, .home_score {
+  display: flex;
+  flex-direction: column; 
+  justify-content: space-between;
+} 
+
+#timer {
+  background-color: #000;
+  border: 2px solid #fff;
+  margin-top: 0;
+  padding: 1em 2em;
+}
+
+/*Buttons*/
+.btn_container {
+  display: flex;
+  gap: 10px;
+}
+
+button {  
+  background-color: #F94F6D;
+  border-radius: 50%;
+  color: #fff;
+  cursor: pointer;
+  padding: 1em;  
+}
+
+button:active {
+  box-shadow: inset 0px 0px  10px rgb(47, 44, 44);
+}
+
+.options button {
+  background-color: #1B244A;
+  border-radius: 5px;
+  border: 2px solid rgb(255, 255, 255, 0.5);
+  color: rgb(255, 255, 255, 0.5);
+  cursor: pointer;
+  padding: 10px;
+  text-align: center;
+}
+
+.options button:hover {
+  border: 2px solid rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
+}
+
+.options button:active {
+  border: 2px solid #F94F6D;
+  color:  #F94F6D;
+}
+
+button:disabled, 
+button:hover:disabled, 
+.options button:disabled:hover, 
+.options button:disabled:active  {
+  background-color: rgb(97, 97, 97);
+  border:none;
+  color: #fff;
+  cursor: no-drop;
+}
+
+#start_btn, #reset_btn {
+  padding: 1em 1.5em;
+  width: 100px;
+}
+
+/*Icons*/
+.fa-caret-right {
+ align-self: end;
+}
+
+.fa-caret-right, .fa-caret-left {
+  margin-top: 1em;
+}
