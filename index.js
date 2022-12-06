@@ -1,19 +1,19 @@
 let homeScore = document.getElementById("home_num")
 let guestScore = document.getElementById("guest_num")
 
-let firstHomeSum = document.getElementById("first_summand")
-let secondHomeSum = document.getElementById("second_summand")
-let thirdHomeSum = document.getElementById("third_summand")
+const firstHomeSum = document.getElementById("first_summand")
+const secondHomeSum = document.getElementById("second_summand")
+const thirdHomeSum = document.getElementById("third_summand")
 
-let firstGuestSum = document.getElementById("first_guest_sum")
-let secondGuestSum = document.getElementById("second_guest_sum")
-let thirdGuestSum = document.getElementById("third_guest_sum")
+const firstGuestSum = document.getElementById("first_guest_sum")
+const secondGuestSum = document.getElementById("second_guest_sum")
+const thirdGuestSum = document.getElementById("third_guest_sum")
 let period = document.getElementById("period")
 
-let caretLeft = document.getElementById("fa-caret-left")
-let caretRight = document.getElementById("fa-caret-right")
+const caretLeft = document.getElementById("fa-caret-left")
+const caretRight = document.getElementById("fa-caret-right")
 let timer = document.getElementById("timer")
-let options = document.getElementsByClassName("options")
+const options = document.getElementsByClassName("options")
 
 const startBtn = document.querySelector("#start_btn")
 const resetBtn = document.getElementById("reset_btn")
